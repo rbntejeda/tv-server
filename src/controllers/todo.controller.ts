@@ -27,7 +27,7 @@ router.route('/:id')
             if (model) {
                 res.status(200).send(model);
             } else {
-                res.status(401).send();
+                res.status(404).send();
             }
         } catch (error) {
             res.status(500).send(error)
